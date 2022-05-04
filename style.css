@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+    --base-color: red;
+    --base-padding: 24px;
+    --base-blur: 8px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -19,10 +25,11 @@ h1{
 }
 
 div.image{
-    background-color: red;
+    background-color: var(--base-color);
 }
 
 img{
     width: 800px;
-    padding: 24px;
+    padding: var(--base-padding);
+    filter: blur(var(--base-blur));
 }
